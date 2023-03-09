@@ -4,7 +4,7 @@ import moment from 'moment';
 
 const WeatherCard = ({weatherData}) => (
   <div className="main">
-      <p className="header">{weatherData.name}</p>
+      <p className="cityName">{weatherData.name}</p>
       <div className="flex">
         <p className="day">{moment().format('dddd')}, <span>{moment().format('LL')}</span></p>
         <p className="description">{weatherData.weather[0].main}</p>
